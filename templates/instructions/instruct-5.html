@@ -1,0 +1,50 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr />
+
+    <div class="instructions well">
+
+        <p>
+            This is the fifth page of instructions
+        </p>
+
+        <p>
+			<img id="instruction5" class="displayed" src="" alt="Instruction5" />
+        </p>
+        <script type="text/javascript">
+			if (condition == 0){
+					document.getElementById("instruction5").src ="{{ server_location }}/static/images/0ins5.png";
+				} else{
+					document.getElementById("instruction5").src ="{{ server_location }}/static/images/1ins5.png";
+			};
+        </script>
+
+
+        <script type="text/javascript">
+        //console.log(psiTurk.getInstructionIndicator())
+        </script>
+
+    </div>
+
+    <hr />
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+                <button type="button" id="prev" value="prev" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
